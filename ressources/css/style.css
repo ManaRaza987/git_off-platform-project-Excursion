@@ -1,13 +1,110 @@
-* Styling for the iPhone container */
+/* Reset & Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+
+
+
+body {
+  font-family: TimeNewsRoman;
+  background-color: black;
+  color: whitesmoke;
+  line-height: 1.6;
+  padding: 10px;
+}
+a {
+  color: mediumaquamarine;
+  font-size:16px;
+  text-decoration: none;
+  position:centered;
+  margin: 10px 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%; /* Prevents overflow */
+  height: auto;
+  display: block; /* Removes unwanted space below the image */
+}
+
+.center-text {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  
+  text-align: center; /* Center text inside */
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  font-size: 50px;
+  position:centered;
+  margin: 10px 0;
+}
+
+h2{
+  font-family:Verdana;
+  font-weight:300;
+  font-size: 42px;
+  position:centered;
+  margin: 10px 0;
+}
+
+p{
+  font-size: 21px;
+}
+
+
+
+
+.img {
+  display: block; width: 300px; height: auto;
+}
+
+.container {
+  /*display: flex;
+  /*flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start;
+  align-items: center; /* Centers content horizontally */
+  height: 100%; /* Full height */
+  padding: 20px; /* Optional padding for spacing */
+  /*background-color: #f0f0f0; /* Background color for the container */
+}
+
+
+
+/* Styling for the iPhone container */
 .iphone {
   width: 300px; /* Width of the iPhone */
   height: 600px; /* Height of the iPhone */
   border-radius: 36px; /* Rounded corners like an iPhone */
   border: 16px solid #333; /* Dark border to simulate the iPhone frame */
   background-color: #fff; /* White background */
-  position: relative;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  /*position: relative;*/
+
+  
+  
+  /*top: 50%; 
+  left: 50%;*/
+
+  box-shadow: 0 10 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
   overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  place-items: center; 
+  
+  position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);
 }
 
 /* Simulating the screen area */
